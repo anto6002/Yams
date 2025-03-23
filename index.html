@@ -1,8 +1,535 @@
-<html>
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Feuille de Yam's V-2</title>
+</head>
 
 <body>
 
-<h1>Je fait un test !!!!</h1>
+    <table>
+            <tbody>
+                    <tr class="menu">
+                        <td>PARTIE DE YAM'S (V2)</td>
+                        <td>POINTS</td>
+                        <td class="j1">
+                            <input type="text" class="nom">
+                        </td>
+                        <td class="j2">
+                            <input type="text" class="nom2">
+                        </td>
+                        <td class="j3">
+                            <input type="text" class="nom">
+                        </td>
+                        <td class="j4">
+                            <input type="text" class="nom2">
+                        </td>
+                    </tr>
+                    <tr class="UN"> 
+                        <td>UN</td>
+                        <td>Total des dés</td>
+                        <td class="j1">
+                            <select id="UN_1" onchange="partie1_1()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                        <td class="j2">
+                            <select id="UN_2" onchange="partie1_2()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                        <td class="j3">
+                            <select id="UN_3" onchange="partie1_3()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </td>
+                        <td class="j4">
+                            <select id="UN_4" onchange="partie1_4()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="DEUX">
+                        <td>DEUX</td>
+                        <td>Total des dés</td>
+                        <td class="j1">
+                            <select id="DEUX_1" onchange="partie1_1()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="2">2</option>
+                                <option value="4">4</option>
+                                <option value="6">6</option>
+                                <option value="8">8</option>
+                                <option value="10">10</option>
+                            </select>
+                        </td>
+                        <td class="j2">
+                            <select id="DEUX_2" onchange="partie1_2()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="2">2</option>
+                                <option value="4">4</option>
+                                <option value="6">6</option>
+                                <option value="8">8</option>
+                                <option value="10">10</option>
+                            </select>
+                        </td>
+                        <td class="j3">
+                            <select id="DEUX_3" onchange="partie1_3()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="2">2</option>
+                                <option value="4">4</option>
+                                <option value="6">6</option>
+                                <option value="8">8</option>
+                                <option value="10">10</option>
+                            </select>
+                        </td>
+                        <td class="j4">
+                            <select id="DEUX_4" onchange="partie1_4()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="2">2</option>
+                                <option value="4">4</option>
+                                <option value="6">6</option>
+                                <option value="8">8</option>
+                                <option value="10">10</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="TROIS">
+                        <td>TROIS</td>
+                        <td>Total des dés</td>
+                        <td class="j1">
+                            <select id="TROIS_1" onchange="partie1_1()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="3">3</option>
+                                <option value="6">6</option>
+                                <option value="9">9</option>
+                                <option value="12">12</option>
+                                <option value="15">15</option>
+                            </select>
+                        </td>
+                        <td class="j2">
+                            <select id="TROIS_2" onchange="partie1_2()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="3">3</option>
+                                <option value="6">6</option>
+                                <option value="9">9</option>
+                                <option value="12">12</option>
+                                <option value="15">15</option>
+                            </select>
+                        </td>
+                        <td class="j3">
+                            <select id="TROIS_3" onchange="partie1_3()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="3">3</option>
+                                <option value="6">6</option>
+                                <option value="9">9</option>
+                                <option value="12">12</option>
+                                <option value="15">15</option>
+                            </select>
+                        </td>
+                        <td class="j4">
+                            <select id="TROIS_4" onchange="partie1_4()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="3">3</option>
+                                <option value="6">6</option>
+                                <option value="9">9</option>
+                                <option value="12">12</option>
+                                <option value="15">15</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="QUATRE">
+                        <td>QUATRE</td>
+                        <td>Total des dés</td>
+                        <td class="j1">
+                            <select id="QUATRE_1" onchange="partie1_1()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="4">4</option>
+                                <option value="8">8</option>
+                                <option value="12">12</option>
+                                <option value="16">16</option>
+                                <option value="20">20</option>
+                            </select>
+                        </td>
+                        <td class="j2">
+                            <select id="QUATRE_2" onchange="partie1_2()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="4">4</option>
+                                <option value="8">8</option>
+                                <option value="12">12</option>
+                                <option value="16">16</option>
+                                <option value="20">20</option>
+                            </select>
+                        </td>
+                        <td class="j3">
+                            <select id="QUATRE_3" onchange="partie1_3()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="4">4</option>
+                                <option value="8">8</option>
+                                <option value="12">12</option>
+                                <option value="16">16</option>
+                                <option value="20">20</option>
+                            </select>
+                        </td>
+                        <td class="j4">
+                            <select id="QUATRE_4" onchange="partie1_4()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="4">4</option>
+                                <option value="8">8</option>
+                                <option value="12">12</option>
+                                <option value="16">16</option>
+                                <option value="20">20</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="CINQ">
+                        <td>CINQ</td>
+                        <td>Total des dés</td>
+                        <td class="j1">
+                            <select id="CINQ_1" onchange="partie1_1()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                            </select>
+                        </td>
+                        <td class="j2">
+                            <select id="CINQ_2" onchange="partie1_2()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                            </select>
+                        </td>
+                        <td class="j3">
+                            <select id="CINQ_3" onchange="partie1_3()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                            </select>
+                        </td>
+                        <td class="j4">
+                            <select id="CINQ_4" onchange="partie1_4()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="SIX">
+                        <td>SIX</td>
+                        <td>Total des dés</td>
+                        <td class="j1">
+                            <select id="SIX_1" onchange="partie1_1()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="6">6</option>
+                                <option value="12">12</option>
+                                <option value="18">18</option>
+                                <option value="24">24</option>
+                                <option value="30">30</option>
+                            </select>
+                        </td>
+                        <td class="j2">
+                            <select id="SIX_2" onchange="partie1_2()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="6">6</option>
+                                <option value="12">12</option>
+                                <option value="18">18</option>
+                                <option value="24">24</option>
+                                <option value="30">30</option>
+                            </select>
+                        </td>
+                        <td class="j3">
+                            <select id="SIX_3" onchange="partie1_3()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="6">6</option>
+                                <option value="12">12</option>
+                                <option value="18">18</option>
+                                <option value="24">24</option>
+                                <option value="30">30</option>
+                            </select>
+                        </td>
+                        <td class="j4">
+                            <select id="SIX_4" onchange="partie1_4()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="6">6</option>
+                                <option value="12">12</option>
+                                <option value="18">18</option>
+                                <option value="24">24</option>
+                                <option value="30">30</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="result">
+                        <td colspan="2">Résultat 1</td>
+                        <td class="j1" id="resultat_1_1">0</td>
+                        <td class="j2" id="resultat_1_2">0</td>
+                        <td class="j3" id="resultat_1_3">0</td>
+                        <td class="j4" id="resultat_1_4">0</td>
+                    </tr>
+                    <tr class="result">
+                        <td colspan="2">Bonus (si >=63) -> +35</td>
+                        <td class="j1" id="bonus_1">+ 0</td>
+                        <td class="j2" id="bonus_2">+ 0</td>
+                        <td class="j3" id="bonus_3">+ 0</td>
+                        <td class="j4" id="bonus_4">+ 0</td>
+                    </tr>
+                    <tr class="result">
+                        <td colspan="2">Résultat 2</td>
+                        <td class="j1" id="resultat_2_1">0</td>
+                        <td class="j2" id="resultat_2_2">0</td>
+                        <td class="j3" id="resultat_2_3">0</td>
+                        <td class="j4" id="resultat_2_4">0</td>
+                    </tr>
+                    <tr class="BRELAN">
+                        <td>BRELAN <em>(3 dés identiques)</em></td>
+                        <td>Total des dés</td>
+                        <td class="j1">
+                            <input id="BRELAN_1" type="text" onchange="partie2_1()">
+                        </td>
+                        <td class="j2">
+                            <input id="BRELAN_2" type="text" onchange="partie2_2()">
+                        </td>
+                        <td class="j3">
+                            <input id="BRELAN_3" type="text" onchange="partie2_3()">
+                        </td>
+                        <td class="j4">
+                            <input id="BRELAN_4" type="text" onchange="partie2_4()">
+                        </td>
+                    </tr>
+                    <tr class="CARRE">
+                        <td>CARRE <em>(4 dés identiques)</em></td>
+                        <td>Total des dés</td>
+                        <td class="j1">
+                            <input id="CARRE_1" type="text" onchange="partie2_1()">
+                        </td>
+                        <td class="j2">
+                            <input id="CARRE_2" type="text" onchange="partie2_2()">
+                        </td>
+                        <td class="j3">
+                            <input id="CARRE_3" type="text" onchange="partie2_3()">
+                        </td>
+                        <td class="j4">
+                            <input id="CARRE_4" type="text" onchange="partie2_4()">
+                        </td>
+                    </tr>
+                    <tr class="FULL">
+                        <td>FULL <em>(3 + 2 dés identiques)</em></td>
+                        <td>25</td>
+                        <td class="j1">
+                            <select id="FULL_1" onchange="partie2_1()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="25">25</option>
+                            </select>
+                        </td>
+                        <td class="j2">
+                            <select id="FULL_2" onchange="partie2_2()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="25">25</option>
+                            </select>
+                        </td>
+                        <td class="j3">
+                            <select id="FULL_3" onchange="partie2_3()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="25">25</option>
+                            </select>
+                        </td>
+                        <td class="j4">
+                            <select id="FULL_4" onchange="partie2_4()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="25">25</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="PS">
+                        <td>PETITE SUITE <em>(Suite de 4 dés)</em></td>
+                        <td>30</td>
+                        <td class="j1">
+                            <select id="PS_1" onchange="partie2_1()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="30">30</option>
+                            </select>
+                        </td>
+                        <td class="j2">
+                            <select id="PS_2" onchange="partie2_2()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="30">30</option>
+                            </select>
+                        </td>
+                        <td class="j3">
+                            <select id="PS_3" onchange="partie2_3()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="30">30</option>
+                            </select>
+                        </td>
+                        <td class="j4">
+                            <select id="PS_4" onchange="partie2_4()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="30">30</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="GS">
+                        <td>GRANDE SUITE <em>(Suite de 5 dés)</em></td>
+                        <td>40</td>
+                        <td class="j1">
+                            <select id="GS_1" onchange="partie2_1()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="40">40</option>
+                            </select>
+                        </td>
+                        <td class="j2">
+                            <select id="GS_2" onchange="partie2_2()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="40">40</option>
+                            </select>
+                        </td>
+                        <td class="j3">
+                            <select id="GS_3" onchange="partie2_3()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="40">40</option>
+                            </select>
+                        </td>
+                        <td class="j4">
+                            <select id="GS_4" onchange="partie2_4()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="40">40</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="YAMS">
+                        <td>YAM'S <em>(5 dés identiques)</em></td>
+                        <td>50</td>
+                        <td class="j1">
+                            <select id="YAMS_1" onchange="partie2_1()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="50">50</option>
+                            </select>
+                        </td>
+                        <td class="j2">
+                            <select id="YAMS_2" onchange="partie2_2()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="50">50</option>
+                            </select>
+                        </td>
+                        <td class="j3">
+                            <select id="YAMS_3" onchange="partie2_3()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="50">50</option>
+                            </select>
+                        </td>
+                        <td class="j4">
+                            <select id="YAMS_4" onchange="partie2_4()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="50">50</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="CHANCE">
+                        <td>GRANDE CHANCE</td>
+                        <td>Total des dés</td>
+                        <td class="j1">
+                            <input id="CHANCE_1" type="text" onchange="partie2_1()">
+                        </td>
+                        <td class="j2">
+                            <input id="CHANCE_2" type="text" onchange="partie2_2()">
+                        </td>
+                        <td class="j3">
+                            <input id="CHANCE_3" type="text" onchange="partie2_3()">
+                        </td>
+                        <td class="j4">
+                            <input id="CHANCE_4" type="text" onchange="partie2_4()">
+                        </td>
+                    </tr>
+                    <tr class="result">
+                        <td colspan="2">Résultat 3</td>
+                        <td class="j1" id="resultat_3_1">0</td>
+                        <td class="j2" id="resultat_3_2">0</td>
+                        <td class="j3" id="resultat_3_3">0</td>
+                        <td class="j4" id="resultat_3_4">0</td>
+                    </tr>
+                    <tr class="result">
+                        <td colspan="2">Résultat Final</td>
+                        <td class="j1" id="resultat_fin_1">0</td>
+                        <td class="j2" id="resultat_fin_2">0</td>
+                        <td class="j3" id="resultat_fin_3">0</td>
+                        <td class="j4" id="resultat_fin_4">0</td>
+                    </tr>
+            </tbody>
+    </table>
 
 </body>
 
