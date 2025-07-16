@@ -28,6 +28,9 @@
                         <td class="j4">
                             <input type="text" class="nom2">
                         </td>
+                        <td class="j5">
+                            <input type="text" class="nom2">
+                        </td>
                     </tr>
                     <tr class="UN"> 
                         <td>UN</td>
@@ -67,6 +70,17 @@
                         </td>
                         <td class="j4">
                             <select id="UN_4" onchange="partie1_4()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 </option>
+                            </select>
+                        </td>
+                        <td class="j5">
+                            <select id="UN_5" onchange="partie1_5()">
                                 <option></option>
                                 <option value="0">0</option>
                                 <option value="1">1</option>
@@ -124,6 +138,17 @@
                                 <option value="10">10</option>
                             </select>
                         </td>
+                        <td class="j5">
+                            <select id="DEUX_5" onchange="partie1_5()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="2">2</option>
+                                <option value="4">4</option>
+                                <option value="6">6</option>
+                                <option value="8">8</option>
+                                <option value="10">10</option>
+                            </select>
+                        </td>
                     </tr>
                     <tr class="TROIS">
                         <td>TROIS</td>
@@ -163,6 +188,17 @@
                         </td>
                         <td class="j4">
                             <select id="TROIS_4" onchange="partie1_4()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="3">3</option>
+                                <option value="6">6</option>
+                                <option value="9">9</option>
+                                <option value="12">12</option>
+                                <option value="15">15</option>
+                            </select>
+                        </td>
+                        <td class="j5">
+                            <select id="TROIS_5" onchange="partie1_5()">
                                 <option></option>
                                 <option value="0">0</option>
                                 <option value="3">3</option>
@@ -220,6 +256,17 @@
                                 <option value="20">20</option>
                             </select>
                         </td>
+                        <td class="j5">
+                            <select id="QUATRE_5" onchange="partie1_5()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="4">4</option>
+                                <option value="8">8</option>
+                                <option value="12">12</option>
+                                <option value="16">16</option>
+                                <option value="20">20</option>
+                            </select>
+                        </td>
                     </tr>
                     <tr class="CINQ">
                         <td>CINQ</td>
@@ -259,6 +306,17 @@
                         </td>
                         <td class="j4">
                             <select id="CINQ_4" onchange="partie1_4()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="5">5</option>
+                                <option value="10">10</option>
+                                <option value="15">15</option>
+                                <option value="20">20</option>
+                                <option value="25">25</option>
+                            </select>
+                        </td>
+                        <td class="j5">
+                            <select id="CINQ_5" onchange="partie1_5()">
                                 <option></option>
                                 <option value="0">0</option>
                                 <option value="5">5</option>
@@ -316,6 +374,17 @@
                                 <option value="30">30</option>
                             </select>
                         </td>
+                        <td class="j5">
+                            <select id="SIX_5" onchange="partie1_5()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="6">6</option>
+                                <option value="12">12</option>
+                                <option value="18">18</option>
+                                <option value="24">24</option>
+                                <option value="30">30</option>
+                            </select>
+                        </td>
                     </tr>
                     <tr class="result">
                         <td colspan="2">Résultat 1</td>
@@ -323,6 +392,7 @@
                         <td class="j2" id="resultat_1_2">0</td>
                         <td class="j3" id="resultat_1_3">0</td>
                         <td class="j4" id="resultat_1_4">0</td>
+                        <td class="j5" id="resultat_1_5">0</td>
                     </tr>
                     <tr class="result">
                         <td colspan="2">Bonus (si >=63) -> +35</td>
@@ -330,6 +400,7 @@
                         <td class="j2" id="bonus_2">+ 0</td>
                         <td class="j3" id="bonus_3">+ 0</td>
                         <td class="j4" id="bonus_4">+ 0</td>
+                        <td class="j5" id="bonus_5">+ 0</td>
                     </tr>
                     <tr class="result">
                         <td colspan="2">Résultat 2</td>
@@ -337,6 +408,7 @@
                         <td class="j2" id="resultat_2_2">0</td>
                         <td class="j3" id="resultat_2_3">0</td>
                         <td class="j4" id="resultat_2_4">0</td>
+                        <td class="j5" id="resultat_2_5">0</td>
                     </tr>
                     <tr class="BRELAN">
                         <td>BRELAN <em>(3 dés identiques)</em></td>
@@ -353,6 +425,9 @@
                         <td class="j4">
                             <input id="BRELAN_4" type="text" onchange="partie2_4()">
                         </td>
+                        <td class="j5">
+                            <input id="BRELAN_5" type="text" onchange="partie2_5()">
+                        </td>
                     </tr>
                     <tr class="CARRE">
                         <td>CARRE <em>(4 dés identiques)</em></td>
@@ -368,6 +443,9 @@
                         </td>
                         <td class="j4">
                             <input id="CARRE_4" type="text" onchange="partie2_4()">
+                        </td>
+                        <td class="j5">
+                            <input id="CARRE_5" type="text" onchange="partie2_5()">
                         </td>
                     </tr>
                     <tr class="FULL">
@@ -396,6 +474,13 @@
                         </td>
                         <td class="j4">
                             <select id="FULL_4" onchange="partie2_4()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="25">25</option>
+                            </select>
+                        </td>
+                        <td class="j5">
+                            <select id="FULL_5" onchange="partie2_5()">
                                 <option></option>
                                 <option value="0">0</option>
                                 <option value="25">25</option>
@@ -433,6 +518,13 @@
                                 <option value="30">30</option>
                             </select>
                         </td>
+                        <td class="j5">
+                            <select id="PS_5" onchange="partie2_5()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="30">30</option>
+                            </select>
+                        </td>
                     </tr>
                     <tr class="GS">
                         <td>GRANDE SUITE <em>(Suite de 5 dés)</em></td>
@@ -460,6 +552,13 @@
                         </td>
                         <td class="j4">
                             <select id="GS_4" onchange="partie2_4()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="40">40</option>
+                            </select>
+                        </td>
+                        <td class="j5">
+                            <select id="GS_5" onchange="partie2_5()">
                                 <option></option>
                                 <option value="0">0</option>
                                 <option value="40">40</option>
@@ -497,6 +596,13 @@
                                 <option value="50">50</option>
                             </select>
                         </td>
+                        <td class="j5">
+                            <select id="YAMS_5" onchange="partie2_5()">
+                                <option></option>
+                                <option value="0">0</option>
+                                <option value="50">50</option>
+                            </select>
+                        </td>
                     </tr>
                     <tr class="CHANCE">
                         <td>GRANDE CHANCE</td>
@@ -513,6 +619,9 @@
                         <td class="j4">
                             <input id="CHANCE_4" type="text" onchange="partie2_4()">
                         </td>
+                        <td class="j5">
+                            <input id="CHANCE_5" type="text" onchange="partie2_5()">
+                        </td>
                     </tr>
                     <tr class="result">
                         <td colspan="2">Résultat 3</td>
@@ -520,6 +629,7 @@
                         <td class="j2" id="resultat_3_2">0</td>
                         <td class="j3" id="resultat_3_3">0</td>
                         <td class="j4" id="resultat_3_4">0</td>
+                        <td class="j5" id="resultat_3_5">0</td>
                     </tr>
                     <tr class="result">
                         <td colspan="2">Résultat Final</td>
@@ -527,6 +637,7 @@
                         <td class="j2" id="resultat_fin_2">0</td>
                         <td class="j3" id="resultat_fin_3">0</td>
                         <td class="j4" id="resultat_fin_4">0</td>
+                        <td class="j5" id="resultat_fin_5">0</td>
                     </tr>
             </tbody>
     </table>
