@@ -33,7 +33,7 @@ td{
 }
 
 /* JOUEURS 1 et 3 */
-.j1, .j3{
+.j1, .j3, .j5{
     background-color: var(--col-background2);
     border-right: 3px solid var(--col-border);
     border-left: 3px solid var(--col-border);
@@ -48,7 +48,7 @@ td{
 
 
 /* SELECT */
-.j1 select, .j3 select{
+.j1 select, .j3 select, .j5 select{
     width: 70px;
     appearance: none;
     text-align: center;
@@ -71,7 +71,7 @@ td{
 }
 
 /* INPUT */
-.j1 input, .j3 input{
+.j1 input, .j3 input, .j5 input{
 	width:70px;
 	height:20px;
     text-align: center;
