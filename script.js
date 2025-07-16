@@ -328,11 +328,95 @@ function partie2_4() {
 	
 	res2_4 = Number(BRELAN_4) + Number(CARRE_4) + Number(CHANCE_4) + Number(FULL_4) + Number(PSUITE_4) + Number(GSUITE_4) + Number(YAMS_4);
 	
-	document.getElementById("resultat_3_4").innerHTML = res2_1;
+	document.getElementById("resultat_3_4").innerHTML = res2_4;
 	resultat1_4();
 }
 
 function resultat1_4() {
 	resfin_4 = res_4 + res2_4;
 	document.getElementById("resultat_fin_4").innerHTML = resfin_4;
+}
+
+
+
+
+
+
+let res_5 = 0;
+let res2_5 = 0;
+let resfin_5 = 0;
+
+function partie1_5() {
+	let un_5 = document.getElementById("UN_5");
+	let UN_5 = un_5[un_5.selectedIndex];
+	UN_5 = UN_5.value;
+	
+	let deux_5 = document.getElementById("DEUX_5");
+	let DEUX_5 = deux_5[deux_5.selectedIndex];
+	DEUX_5 = DEUX_5.value;
+	
+	let trois_5 = document.getElementById("TROIS_5");
+	let TROIS_5 = trois_5[trois_5.selectedIndex];
+	TROIS_5 = TROIS_5.value;
+	
+	let quatre_5 = document.getElementById("QUATRE_5");
+	let QUATRE_5 = quatre_5[quatre_5.selectedIndex];
+	QUATRE_5 = QUATRE_5.value;
+	
+	let cinq_5 = document.getElementById("CINQ_5");
+	let CINQ_5 = cinq_5[cinq_5.selectedIndex];
+	CINQ_5 = CINQ_5.value;
+	
+	let six_5 = document.getElementById("SIX_5");
+	let SIX_5 = six_5[six_5.selectedIndex];
+	SIX_5 = SIX_5.value;
+	
+	res_5 = Number(UN_5)+Number(DEUX_5)+Number(TROIS_5)+Number(QUATRE_5)+Number(CINQ_5)+Number(SIX_5);
+	document.getElementById("resultat_1_5").innerHTML = res_5;
+	if (res_5>=Number(63)){
+		res_5 = res_5 + Number(35);
+		document.getElementById("bonus_5").innerHTML = "+ 35";
+	}
+	else {
+		document.getElementById("bonus_5").innerHTML = "+ 0";
+	}
+	document.getElementById("resultat_2_5").innerHTML = res_5;
+	resultat1_5();
+}
+
+function partie2_5() {
+	let brelan_5 = document.getElementById("BRELAN_5");
+	BRELAN_5 = brelan_5.value;
+	
+	let carre_5 = document.getElementById("CARRE_5");
+	CARRE_5 = carre_5.value;
+	
+	let chance_5 = document.getElementById("CHANCE_5");
+	CHANCE_5 = chance_5.value;
+	
+	let full_5 = document.getElementById("FULL_5");
+	let FULL_5 = full_5[full_5.selectedIndex];
+	FULL_5 = FULL_5.value;
+	
+	let psuite_5 = document.getElementById("PS_5");
+	let PSUITE_5 = psuite_5[psuite_5.selectedIndex];
+	PSUITE_5 = PSUITE_5.value;
+	
+	let gsuite_5 = document.getElementById("GS_5");
+	let GSUITE_5 = gsuite_5[gsuite_5.selectedIndex];
+	GSUITE_5 = GSUITE_5.value;
+	
+	let yams_5 = document.getElementById("YAMS_5");
+	let YAMS_5 = yams_5[yams_5.selectedIndex];
+	YAMS_5 = YAMS_5.value;
+	
+	res2_5 = Number(BRELAN_5) + Number(CARRE_5) + Number(CHANCE_5) + Number(FULL_5) + Number(PSUITE_5) + Number(GSUITE_5) + Number(YAMS_5);
+	
+	document.getElementById("resultat_3_5").innerHTML = res2_5;
+	resultat1_5();
+}
+
+function resultat1_5() {
+	resfin_5 = res_5 + res2_5;
+	document.getElementById("resultat_fin_5").innerHTML = resfin_5;
 }
