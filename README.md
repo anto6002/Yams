@@ -1,4 +1,4 @@
 # Jeu de dés : Yam's
 
-Le jeu ce joue à au moins 2 personnes.
-Ici le jeu est configuré pour maximum 5 personnes
+## Le jeu se joue à au moins 2 personnes.
+## Ici le jeu est configuré pour maximum 5 personnes
